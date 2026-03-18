@@ -1,0 +1,172 @@
+> Task :app:compileJava UP-TO-DATE
+> Task :app:processResources UP-TO-DATE
+> Task :app:classes UP-TO-DATE
+> Task :app:resolveMainClassName UP-TO-DATE
+
+> Task :app:bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-03-17T11:01:42.880+08:00  INFO 187408 --- [ai-interview-platform] [           main] interview.guide.App                      : Starting App using Java 21.0.10 with PID 187408 (D:\Java_code\Javaguide_interview-guide\interview-guide\app\build\classes\java\main started by Coulson in D:\Java_code\Javaguide_interview-guide\interview-guide\app)
+2026-03-17T11:01:42.883+08:00  INFO 187408 --- [ai-interview-platform] [           main] interview.guide.App                      : No active profile set, falling back to 1 default profile: "default"
+2026-03-17T11:01:44.303+08:00  INFO 187408 --- [ai-interview-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-17T11:01:44.306+08:00  INFO 187408 --- [ai-interview-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-17T11:01:44.915+08:00  INFO 187408 --- [ai-interview-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 597 ms. Found 7 JPA repository interfaces.
+2026-03-17T11:01:44.945+08:00  INFO 187408 --- [ai-interview-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-17T11:01:44.946+08:00  INFO 187408 --- [ai-interview-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-17T11:01:44.999+08:00  INFO 187408 --- [ai-interview-platform] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface interview.guide.modules.interview.repository.InterviewAnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-17T11:01:45.000+08:00  INFO 187408 --- [ai-interview-platform] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface interview.guide.modules.interview.repository.InterviewSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-17T11:01:45.000+08:00  INFO 187408 --- [ai-interview-platform] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface interview.guide.modules.knowledgebase.repository.KnowledgeBaseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-17T11:01:45.000+08:00  INFO 187408 --- [ai-interview-platform] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface interview.guide.modules.knowledgebase.repository.RagChatMessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-17T11:01:45.000+08:00  INFO 187408 --- [ai-interview-platform] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface interview.guide.modules.knowledgebase.repository.RagChatSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-17T11:01:45.000+08:00  INFO 187408 --- [ai-interview-platform] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface interview.guide.modules.resume.repository.ResumeAnalysisRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-17T11:01:45.000+08:00  INFO 187408 --- [ai-interview-platform] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface interview.guide.modules.resume.repository.ResumeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-17T11:01:45.000+08:00  INFO 187408 --- [ai-interview-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2026-03-17T11:01:46.054+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-17T11:01:46.089+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-17T11:01:46.089+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-17T11:01:46.203+08:00  INFO 187408 --- [ai-interview-platform] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3252 ms
+2026-03-17T11:01:46.792+08:00  INFO 187408 --- [ai-interview-platform] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-17T11:01:46.949+08:00  INFO 187408 --- [ai-interview-platform] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-17T11:01:48.113+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-17T11:01:48.184+08:00  INFO 187408 --- [ai-interview-platform] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-17T11:01:48.629+08:00  INFO 187408 --- [ai-interview-platform] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a654e05
+2026-03-17T11:01:48.634+08:00  INFO 187408 --- [ai-interview-platform] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-17T11:01:48.728+08:00  WARN 187408 --- [ai-interview-platform] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-17T11:01:48.779+08:00  INFO 187408 --- [ai-interview-platform] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/interview_guide]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: interview_guide/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-17T11:01:50.905+08:00  INFO 187408 --- [ai-interview-platform] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-17T11:01:51.312+08:00  INFO 187408 --- [ai-interview-platform] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-17T11:01:51.520+08:00  INFO 187408 --- [ai-interview-platform] [           main] org.redisson.Version                     : Redisson 4.0.0
+2026-03-17T11:01:52.301+08:00  INFO 187408 --- [ai-interview-platform] [isson-netty-1-5] o.redisson.connection.ConnectionsHolder  : 1 connections initialized for localhost/127.0.0.1:6379
+2026-03-17T11:01:52.329+08:00  INFO 187408 --- [ai-interview-platform] [sson-netty-1-24] o.redisson.connection.ConnectionsHolder  : 10 connections initialized for localhost/127.0.0.1:6379
+2026-03-17T11:01:52.442+08:00  INFO 187408 --- [ai-interview-platform] [           main] i.guide.common.aspect.RateLimitAspect    : 限流 Lua 脚本加载完成, SHA1: af747460c3333f1d0711c7e8d517ea34e24cc034
+2026-03-17T11:01:55.120+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-17T11:02:01.968+08:00  INFO 187408 --- [ai-interview-platform] [           main] i.g.common.async.AbstractStreamConsumer  : Redis Stream 消费者组已创建或已存在: evaluate-group
+2026-03-17T11:02:01.968+08:00  INFO 187408 --- [ai-interview-platform] [           main] i.g.common.async.AbstractStreamConsumer  : 评估消费者已启动: consumerName=evaluate-consumer-ab49247c
+2026-03-17T11:02:02.688+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.s.a.v.pgvector.PgVectorStore           : Using the vector table name: vector_store. Is empty: false
+2026-03-17T11:02:02.693+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.s.a.v.pgvector.PgVectorStore           : Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-03-17T11:02:02.693+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.s.a.v.pgvector.PgVectorStore           : vectorTableValidationsEnabled false
+2026-03-17T11:02:09.338+08:00  INFO 187408 --- [ai-interview-platform] [           main] i.g.common.async.AbstractStreamConsumer  : Redis Stream 消费者组已创建或已存在: vectorize-group
+2026-03-17T11:02:09.339+08:00  INFO 187408 --- [ai-interview-platform] [           main] i.g.common.async.AbstractStreamConsumer  : 向量化消费者已启动: consumerName=vectorize-consumer-e8ff611e
+2026-03-17T11:02:15.018+08:00  INFO 187408 --- [ai-interview-platform] [           main] i.g.common.async.AbstractStreamConsumer  : Redis Stream 消费者组已创建或已存在: analyze-group
+2026-03-17T11:02:15.018+08:00  INFO 187408 --- [ai-interview-platform] [           main] i.g.common.async.AbstractStreamConsumer  : 简历分析消费者已启动: consumerName=analyze-consumer-8e962329
+2026-03-17T11:02:15.072+08:00  WARN 187408 --- [ai-interview-platform] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-17T11:02:15.675+08:00  INFO 187408 --- [ai-interview-platform] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-17T11:02:15.682+08:00  INFO 187408 --- [ai-interview-platform] [           main] interview.guide.App                      : Started App in 33.559 seconds (process running for 34.188)
+2026-03-17T11:03:14.302+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-0] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-17T11:03:14.302+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-17T11:03:14.307+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-03-17T11:03:14.365+08:00 ERROR 187408 --- [ai-interview-platform] [omcat-handler-0] i.g.c.exception.GlobalExceptionHandler   : 系统异常: No static resource  for request '/'.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource  for request '/'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329) ~[na:na]
+
+2026-03-17T11:03:14.438+08:00 ERROR 187408 --- [ai-interview-platform] [omcat-handler-1] i.g.c.exception.GlobalExceptionHandler   : 系统异常: No static resource swagger-ui/index.html for request '/swagger-ui/index.html'.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html for request '/swagger-ui/index.html'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329) ~[na:na]
+
+2026-03-17T14:09:06.331+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.m.r.service.ResumeUploadService      : 收到简历上传请求: 张忠硕简历001.docx, 大小: 53031 bytes
+2026-03-17T14:09:06.789+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.m.resume.service.ResumeParseService  : 开始解析简历文件: 张忠硕简历001.docx
+2026-03-17T14:09:06.789+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.i.file.DocumentParseService          : 开始解析文件: 张忠硕简历001.docx
+2026-03-17T14:09:07.879+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.i.file.DocumentParseService          : 文件解析成功，提取文本长度: 1954 字符
+2026-03-17T14:09:08.485+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.i.file.FileStorageService            : 文件上传成功: 张忠硕简历001.docx -> resumes/2026/03/17/6980db61_ZhangZhongShuoJianLi001.docx
+2026-03-17T14:09:08.485+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.m.r.service.ResumeUploadService      : 简历已存储到RustFS: resumes/2026/03/17/6980db61_ZhangZhongShuoJianLi001.docx
+2026-03-17T14:09:08.643+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.m.r.s.ResumePersistenceService       : 简历已保存: id=1, hash=9a1350345375fd4a465cd9ad2172c481a90494c798e090122d08811e07c281da
+2026-03-17T14:09:08.681+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.common.async.AbstractStreamProducer  : 分析任务已发送到Stream: resumeId=1, messageId=1773727748678-0
+2026-03-17T14:09:08.681+08:00  INFO 187408 --- [ai-interview-platform] [omcat-handler-6] i.g.m.r.service.ResumeUploadService      : 简历上传完成，分析任务已入队: 张忠硕简历001.docx, resumeId=1
+2026-03-17T14:09:08.682+08:00  INFO 187408 --- [ai-interview-platform] [nalyze-consumer] i.g.common.async.AbstractStreamConsumer  : 开始处理简历分析任务: resumeId=1, messageId=1773727748678-0, retryCount=0
+2026-03-17T14:09:08.781+08:00  INFO 187408 --- [ai-interview-platform] [nalyze-consumer] i.g.m.r.service.ResumeGradingService     : 开始分析简历，文本长度: 1954 字符
+2026-03-17T14:09:46.605+08:00  INFO 187408 --- [ai-interview-platform] [nalyze-consumer] i.g.m.r.service.ResumeGradingService     : 简历分析完成，总分: 87
+2026-03-17T14:09:46.624+08:00  INFO 187408 --- [ai-interview-platform] [nalyze-consumer] i.g.m.r.s.ResumePersistenceService       : 简历评测结果已保存: analysisId=1, resumeId=1, score=87
+2026-03-17T14:09:46.636+08:00  INFO 187408 --- [ai-interview-platform] [nalyze-consumer] i.g.common.async.AbstractStreamConsumer  : 简历分析任务完成: resumeId=1
